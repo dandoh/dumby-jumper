@@ -8,23 +8,23 @@ import { REASON_RESCRIPT, runJumper } from './jumpers';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('dumby-jumper.goToDefinition', () => {
+  let disposable = vscode.commands.registerCommand('dumby-jumper.goToDefinition', () => {
 
-		const editor = vscode.window.activeTextEditor;
-		if (!editor) { return; };
+    const editor = vscode.window.activeTextEditor;
+    if (!editor) { return; };
 
-		switch (editor.document.languageId) {
-			case 'rescript': {
-				runJumper(REASON_RESCRIPT, editor);
-			}
-			case 'reason': {
-				runJumper(REASON_RESCRIPT, editor);
-			}
-		}
+    switch (editor.document.languageId) {
+      case 'rescript': {
+        runJumper(REASON_RESCRIPT, editor);
+      }
+      case 'reason': {
+        runJumper(REASON_RESCRIPT, editor);
+      }
+    }
 
-	});
+  });
 
-	context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
