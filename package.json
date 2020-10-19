@@ -1,7 +1,7 @@
 {
 	"name": "dumby-jumper",
 	"displayName": "dumby-jumper",
-	"description": "Jump to definition simply by guessing",
+	"description": "Jump to definition by guessing",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.50.0"
@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "dumby-jumper.goToDefinition",
-				"title": "Go to definition (dumb)"
+				"title": "Go to definition (guess)"
 			}
 		]
 	},
