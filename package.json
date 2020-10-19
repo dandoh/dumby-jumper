@@ -9,6 +9,7 @@
 	"categories": [
 		"Other"
 	],
+	"publisher": "dandoh",
 	"activationEvents": [
 		"onCommand:dumby-jumper.goToDefinition"
 	],
